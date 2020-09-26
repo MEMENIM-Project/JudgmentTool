@@ -138,6 +138,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\ModeratorsPage.xaml.cs">
+      <DependentUpon>ModeratorsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RoomsHelper.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="Widgets\AnonimProfileWidget.xaml.cs">
@@ -145,6 +148,9 @@
     </Compile>
     <Compile Include="Widgets\MessageWidget.xaml.cs">
       <DependentUpon>MessageWidget.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\ModeratorUserWidget.xaml.cs">
+      <DependentUpon>ModeratorUserWidget.xaml</DependentUpon>
     </Compile>
     <Compile Include="Widgets\RoomSelectorWidget.xaml.cs">
       <DependentUpon>RoomSelectorWidget.xaml</DependentUpon>
@@ -168,6 +174,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ModeratorsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\RoomsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -177,6 +187,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Widgets\MessageWidget.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Widgets\ModeratorUserWidget.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

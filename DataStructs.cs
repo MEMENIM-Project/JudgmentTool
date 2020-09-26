@@ -108,5 +108,19 @@ namespace JudgmentTool
         public List<MessageData> messages { get; set; }
         public bool success { get; set; }
     }
+
+    public class RolesData
+    {
+        public string _id { get; set; }
+        public string rid { get; set; }
+        public UserInfo u { get; set; }
+        public List<string> roles { get; set; }
+    }
+
+    public class RolesResponse
+    {
+        public bool success { get; set; }
+        public List<RolesData> roles { get; set; }
+    }
     
 }

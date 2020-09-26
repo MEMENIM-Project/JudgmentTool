@@ -116,5 +116,21 @@ namespace JudgmentTool.Pages
                 await UpdateRooms();
             }
         }
+
+        private void GetModers_Click(object sender, RoutedEventArgs e)
+        {
+            var roomWidget = (RoomSelectorWidget)lstRooms.SelectedItem;
+            if (roomWidget != null)
+            {
+                if(roomWidget.RoomType != ERoomType.Dialog)
+                {
+                    PageNavigationManager.SwitchToPage(new ModeratorsPage() { RoomID = roomWidget.RoomID, RoomType = roomWidget.RoomType });
+                }    
+                else
+                {
+                    MessageBox.Show("Not allowed");
+                }
+            }
+        }
     }
 }

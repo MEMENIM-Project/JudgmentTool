@@ -18,6 +18,7 @@
         <ListView Grid.Row="1" Grid.Column="0" x:Name="lstRooms"  PreviewMouseLeftButtonUp="lstRooms_PreviewMouseLeftButtonUp">
             <ListView.ContextMenu>
                 <ContextMenu>
+                    <MenuItem Header="View moderators" Click="GetModers_Click"/>
                     <MenuItem Header="Delete Room" Click="DeleteRoom_Click"/>
                 </ContextMenu>
             </ListView.ContextMenu>
